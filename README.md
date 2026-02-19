@@ -1,79 +1,18 @@
-# SB Works – Freelancer Finder 💼
+🚀 SB Works – Freelancer Finder (Smartinternz Project)A professional full-stack MERN application designed to bridge the gap between clients and freelancers. This project facilitates seamless project posting, competitive bidding, and efficient team collaboration.Team ID: LTVIP2026TMIDS37879Status: In-Development (SmartInternz Group Project)🛠 Tech StackLayerTechnologyFrontendReact.js, Bootstrap, Material UI, AxiosBackendNode.js, Express.jsDatabaseMongoDB, MongooseAuthenticationJWT (JSON Web Tokens), bcrypt.jsDev ToolsPostman, MongoDB Compass, VS Code⚙️ Key FeaturesSecure Authentication: Multi-role login (Client, Freelancer, Admin) with JWT protection.Project Lifecycle: Clients can post projects; Freelancers can bid on active listings.Dynamic Dashboards: Personalized views for managing bids, projects, and profiles.Admin Control: Moderation tools to ensure platform integrity.Resource Management: Real-time data fetching using REST APIs.👨‍💻 Project TeamTeam Leader: 👑 Ghanta Sai Babu – Backend Architecture & Full Stack IntegrationTeam Members: 👤 Kowthavarapu Kesav – Frontend Development & UI/UX 👤 Pathan Rasool Meharaj Khan – API Development & Database Design 👤 V Harshitha – Testing, Documentation & Quality Assurance📦 Getting StartedPrerequisitesNode.js (v16+)MongoDB Local or Atlas AccountGit1. InstallationBash# Clone the repository
+git clone https://github.com/GhantaSaiBabu/freelancer_finder.git
+cd freelancer_finder
 
-A full-stack MERN application that connects clients with freelancers for seamless project collaboration, bidding, and communication.
+# Install Backend dependencies
+cd server && npm install
 
-## 🚀 Live Demo
-[🔗 Demo Link](https://drive.google.com/drive/folders/1qMc5a5ohuFAnlZhHpiQUpNvX5ICipNoj?usp=sharing)
-
-## 🛠 Tech Stack
-- **Frontend:** React.js, Bootstrap, Material UI, Axios  
-- **Backend:** Node.js, Express.js, MongoDB, Mongoose  
-- **Auth:** JWT, bcrypt  
-- **Tools:** Postman, MongoDB Compass, VS Code  
-
-## ⚙️ Features
-- 📝 Project Posting & Bidding  
-- 🔐 Secure Authentication (JWT)  
-- 👤 Role-Based Dashboards (Client, Freelancer, Admin)  
-- 📬 In-App Messaging (Basic)  
-- 🛡️ Admin Moderation  
-
-## 📦 Setup Instructions
-
-### Prerequisites
-- Node.js, MongoDB, Git
-
-### Installation
-```bash
-git clone https://github.com/Harithasaibarma/freelancer_finder.git
-cd freelancer-app-MERN
-
-# Install frontend dependencies
-cd client && npm install
-
-# Install backend dependencies
-cd ../server && npm install
-```
-
-### Environment Setup
-Create `.env` in `/server`:
-```env
-PORT=5000
+# Install Frontend dependencies
+cd ../client && npm install
+2. Environment SetupCreate a .env file in the /server directory:Code snippetPORT=5000
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-```
+JWT_SECRET=your_jwt_secret_key
+3. Run the ApplicationBash# Start Server (from /server)
+npm start
 
-### Run Locally
-```bash
-# Start backend
-cd server && npm start
-
-# Start frontend
-cd ../client && npm start
-```
-
-Visit: [http://localhost:3000](http://localhost:3000)
-
-## 📌 API Routes
-
-- `POST /api/auth/register` – Register  
-- `POST /api/auth/login` – Login  
-- `GET /api/projects` – View all projects  
-- `POST /api/projects` – Post a new project  
-- `POST /api/bids` – Place a bid  
-- `GET /api/bids/:projectId` – View bids
-
-## 🧪 Testing Tools
-- Postman (API)
-- MongoDB Compass (DB)
-- Chrome DevTools (UI)
-
-## 👨‍💻 Team
-- **Bolleddula Vivek Rahul Rai** – Backend, Architecture 
-- **Battu Baby Sarojini** – Frontend (UI)  
-- **Batraju Vamsikrishna** – API Integration, Deployment  
-- **Barama Haritha Sai** – Testing, Docs, Support  
-
----
-
-> ⚠️ Future Plans: Real-time chat, payment gateway, mobile app, review system
+# Start Client (from /client)
+npm start
+Open http://localhost:3000 to view the app.📌 API OverviewMethodEndpointDescriptionPOST/api/auth/registerUser RegistrationPOST/api/auth/loginUser AuthenticationGET/api/projectsFetch all available projectsPOST/api/projectsPost a new job (Client only)POST/api/bidsSubmit a project bid📂 Project ResourcesDemo & Documentation: 🔗 Google Drive FolderLive Preview: 🔗 Recorded Demo🔮 Future Roadmap: Real-time Chat (Socket.io), Payment Integration (Stripe/Razorpay), Mobile App (React Native), and Freelancer Rating System.
