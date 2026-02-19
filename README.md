@@ -1,7 +1,4 @@
-Nice project, Sai Babu 🚀
-I’ll rewrite this into a **clean, professional, and GitHub-ready README** that looks impressive for **SmartInternz, recruiters, and reviewers**. You can directly copy-paste this into `README.md`.
 
----
 
 # 🚀 SB Works – Freelancer Finder
 
